@@ -1,0 +1,20 @@
+header:hover {
+  transition: 0.3s;
+  .nombre-container,
+  .nombre-container h2 {
+    color: #e1e7e9;
+    transition: 0.3s;
+  }
+}
+
+.nav__container a:hover {
+  scale: 1.15;
+  color: #e1e7e9;
+  transition: 0.2s;
+}
+
+.nav__container li:active {
+  text-decoration: underline solid #e1e7e9;
+  scale: 1.4;
+  transition: 0.3s;
+}
