@@ -7,7 +7,7 @@ html {
   background: url("img/Fondo.jpg") top / cover fixed;
   color: #cccccf;
   font-family: "Nunito", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
 }
 h2 {
   font-size: 1.7em;
@@ -15,7 +15,6 @@ h2 {
   font-style: italic;
   color: #91c5f0;
 }
-
 /* --------------------- */
 
 /* Encabezado */
@@ -24,12 +23,15 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 8vh;
+  height: 7vh;
   padding: 1%;
+  gap: 4%;
   background: #024;
   z-index: 100;
   align-items: center;
 }
+
+/* Encabezado nombre */
 .nombre-container {
   display: flex;
   align-items: center;
@@ -67,30 +69,41 @@ main {
   margin: auto;
   z-index: 0;
 }
+main h2{
+  margin-top: 1%;
+}
 
-/* Presentación */
 .presentacion__container,
 .sobremi__container,
 .skills__container,
 .formacion__container,
-.proyectos__container {
+.proyectos__container,
+.contactame__container {
   padding: 5%;
   width: 100%;
   height: auto;
   margin: 6vh 0;
   background-color: #034d;
-  border-radius: 8px;
-}
-.image__container {
-  width: 90%;
-}
-.image__container img {
-  width: 100%;
-  border-radius: 100%;
+  border-radius: 10px;
+  border-bottom: 3px solid #777;
+  font-size: 1.2rem;
 }
 
+/* Presentación */
+.image__container {
+  width: 60%;
+}
+.image__container img {
+  width: 80%;
+  border-radius: 100%;
+  filter: drop-shadow(20px 2px 5px #034);
+}
+.text__container{
+  flex-shrink: 5;
+  font-size: calc(20px + 1vw);
+}
 .presentacion__container h1 {
-  font-size: 1.7em;
+  font-size: 1.5em;
   font-weight: 900;
   color: #9ad;
 }
@@ -98,7 +111,91 @@ main {
   font-style: italic;
 }
 
-/* Sección sobre mi */
+/* Sección Skills */
+.skills__icons{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  gap: 10px
+}
+.icon{
+  margin-top: 15px;
+}
+
+/* Sección Formación */
+.formacion__container button{
+  margin: 20px auto;
+}
+
+/* Sección contactos */
+.contactame__container{
+  display: flex;
+  flex-flow: column wrap;
+}
+.contactame__redes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin: 15px 0 35px;
+  gap: 8px;
+  border-bottom: 3px solid #777 ;
+  border-radius: 10px;
+}
+.contactame__redes a,
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 230px;
+  padding: 8px 3px 5px;
+  margin-bottom: 15px;
+  border: 1px solid #777;
+  border-bottom:7px solid #777 ;
+  border-radius: 7px;
+}
+.contactame__redes a i,
+.icon i {
+  margin-bottom: 5px;
+  font-size: 45px;
+  color: #e1e7e9;
+}
+
+.contactame__formulario{
+  margin: 3% 0 0 10%;
+  width: 80%;
+  display: inline;
+}
+.contenedor__imagen{
+  display: none;
+}
+.contenedor__imagen img{
+  width: 100%;
+}
+.input,
+.button{
+  display: block;
+  width: 75%;
+  padding: 1.2%;
+  font-size: 1.2rem;
+  margin-bottom: 3%;
+  background-color: #142c4fdd;
+  border-bottom: 3px solid #777 ;
+  border-radius: 10px;
+  resize: none;
+  outline: none;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  margin: 5% 0;
+}
+
 
 /* Pie de página */
 footer {
@@ -113,8 +210,13 @@ footer {
   width: 50%;
 }
 
+/* ------------------------------- */
+/* Media queries */
 /* Tablets y PC */
-@media (min-width: 810px) {
+@media (min-width: 820px) {
+  html{
+    font-size: 20px;
+  }
   .nav__container {
     display: inline;
   }
@@ -125,18 +227,29 @@ footer {
     height: 88vh;
     font-size: 2em;
   }
+  .contenedor__imagen{
+    display: inline;
+    width: 40%;
+    position: absolute;
+    text-align: right;
+    left: 65%;
+    bottom: 500px;
+  }
+  
 }
 /* Celulares hasta tablet */
-@media (max-width: 810px) {
+@media (max-width: 819px) {
   .nombre-container {
     width: 90%;
   }
   .image__container {
-    width: 70%;
+    width: 65%;
     margin: -10% 18% 10px;
   }
-  /* .image__container img {
-    border-radius: 100%;
-    width: 55%;
-  } */
+  .input,
+  .button{
+    width: 100%;
+    max-width: 400px;
+
+  }
 }
