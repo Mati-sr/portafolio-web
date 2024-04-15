@@ -36,7 +36,7 @@
     </header>
 
     <main>
-      <div class="presentacion__container">
+      <section class="presentacion__container">
         <div class="image__container">
           <img src="img/Mati Sr.png" alt="Foto Matias Srnec" title="Matías Srnec" />
         </div>
@@ -46,9 +46,9 @@
             Soy <span>desarrollador web</span> Front-End!
           </h1>
         </div>
-      </div>
+      </section>
 
-      <div id="sobremi" class="sobremi__container">
+      <section id="sobremi" class="sobremi__container">
         <h2>Sobre mi</h2>
         <p>
           Soy <span>Matías Srnec</span>, un apasionado <span>Desarrollador Web</span> en constante búsqueda de
@@ -61,9 +61,9 @@
           <br />
           ¡Bienvenido a mi mundo digital!
         </p>
-      </div>
+      </section>
 
-      <div id="skills" class="skills__container">
+      <section id="skills" class="skills__container">
         <h2>Skills</h2>
         <div class="skills__icons">
           <div class="icon"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
@@ -71,22 +71,33 @@
           <div class="icon"><i class="fa-brands fa-js"></i><span>JAVASCRIPT</span></div>
           <div class="icon"><i class="fa-brands fa-react"></i><span>REACT</span></div>
         </div>
-      </div>
+      </section>
 
-      <div id="formacion" class="formacion__container">
+      <section id="formacion" class="formacion__container">
         <h2>Formación</h2>
         <div class="formacion__text">
           <p>
-          Respecto a mi formación profesional, me destaco por ser autodidacta. Comencé formándome con videos en YouTube,
-          leyendo foros, y por sobre todo estudiando la documentación oficial de cada lenguaje. Luego comencé a
-          perfeccionarme un poco más, realizando varios cursos pagos. <br />
-          En la actualidad, tengo la suerte de formar parte del programa ONE (Oracle Next Education), una colaboración
-          entre Alura y Oracle. <br />
-          Para mí, la vida es un constante aprendizaje, una aventura en la que estamos siempre en movimiento, explorando
-          nuevas fronteras y superando desafíos. Creo firmemente en la importancia de mantenernos abiertos al cambio,
-          aceptando las opiniones de los demás y aprendiendo de nuestros errores. Esta filosofía me impulsa a buscar
-          constantemente nuevas formas de crecimiento y desarrollo, tanto a nivel profesional como personal.
+            Respecto a mi formación profesional, me destaco por ser <span>autodidacta</span>. Comencé formándome con
+            videos en YouTube, leyendo foros, y por sobre todo estudiando la documentación oficial de cada lenguaje.
+            Luego comencé a perfeccionarme un poco más, realizando varios cursos pagos. <br />
+            En la actualidad, tengo la suerte de formar parte del programa <span>ONE</span> (Oracle Next Education), una
+            colaboración entre Alura y Oracle. <br />
+            Para mí, la vida es un constante aprendizaje, una aventura en la que estamos siempre en movimiento,
+            explorando nuevas fronteras y superando desafíos. Creo firmemente en la importancia de mantenernos abiertos
+            al cambio, aceptando las opiniones de los demás y aprendiendo de nuestros errores. Esta filosofía me impulsa
+            a buscar constantemente nuevas formas de crecimiento y desarrollo, tanto a nivel profesional como personal.
           </p>
+        </div>
+        <div class="formacion__certificados">
+          <h3>Certificados</h3>
+          <div class="certificados">
+            <img src="img/Cert1.png" alt="Certificado de Alura" />
+            <img src="img/Cert2.png" alt="Certificado de Alura" />
+            <img src="img/Cert3.png" alt="Certificado de Alura" />
+            <img src="img/Cert4.png" alt="Certificado de Alura" />
+            <img src="img/Cert5.png" alt="Certificado de Alura" />
+            <img src="img/Apx.png" alt="Certificado de APX School" />
+          </div>
         </div>
         <button type="button" class="button">
           <a
@@ -95,36 +106,37 @@
             >Haz click aquí si deseas dirigirte a la página de formaciones realizadas en Alura
           </a>
         </button>
-      </div>
+      </section>
 
-      <div id="proyectos" class="proyectos__container">
+      <section id="proyectos" class="proyectos__container">
         <h2>Proyectos</h2>
-        <div class="proyectos__encriptador">
-          <figure>
-            <a href="https://mati-sr.github.io/challenge-encriptador-texto/" target="_blank"
-              ><img
-                src="img/Encriptador-texto.png"
-                alt="Captura de pantalla del Encriptador de texto realizado por Matías Srnec"
-                title="Haz click en la imagen para dirigirte a la página web"
-              />
-            </a>
-            <figcaption>Challenge "Encriptador de Texto", realizado dentro del programa ONE.</figcaption>
-          </figure>
+        <div class="proyectos">
+          <div class="proyecto">
+            <video controls src="Video/Barbería Alura.webm" type="video/webm"></video>
+            <div class="botones">
+              <a href="https://mati-sr.github.io/Barberia-Alura/index.html" target="_blank" class="proyectos-btn1"
+                >Ir a la página</a
+              >
+              <a href="https://github.com/Mati-sr/Barberia-Alura" target="_blank" class="proyectos-btn2"
+                >Ir al repositorio</a
+              >
+            </div>
+          </div>
+          <div class="proyecto">
+            <video controls src="Video/Encriptador de textos.webm" type="video/webm"></video>
+            <div class="botones">
+              <a href="https://mati-sr.github.io/challenge-encriptador-texto/" target="_blank" class="proyectos-btn1">
+                Ir a la página</a
+              >
+              <a href="https://github.com/Mati-sr/challenge-encriptador-texto" target="_blank" class="proyectos-btn2"
+                >Ir al repositorio</a
+              >
+            </div>
+          </div>
         </div>
-        <div class="proyectos__barberia">
-          <figure>
-            <a href="https://mati-sr.github.io/Barberia-Alura/index.html" target="_blank">
-              <img
-                src="img/Barbberia.png"
-                alt="Captura de pantalla de la página desarrollada: Barbería Alura"
-                title="Haz click en la imagen para dirigirte a la página web"
-              />
-            </a>
-            <figcaption>Página web desarrollada dentro del programa ONE.</figcaption>
-          </figure>
-        </div>
-      </div>
-      <div id="contactame" class="contactame__container">
+      </section>
+
+      <section id="contactame" class="contactame__container">
         <h2>Contáctame</h2>
 
         <div class="contactame__redes">
@@ -145,24 +157,21 @@
               <input type="email" name="email" class="input" required placeholder="correo electrónico" />
             </label>
             <label
-              >Teléfono (opcional)<input
-                type="tel"
-                name="telefono"
-                class="input"
-                placeholder="(xx) xxx xxxxxxx"
+              >Teléfono (opcional)<input type="tel" name="telefono" class="input" placeholder="(xx) xxx xxxxxxx"
             /></label>
-            <label >
+            <label>
               Tu mensaje
               <textarea name="mensaje" class="input" placeholder="Mensaje ..." rows="10"></textarea>
             </label>
             <button type="submit" class="button">Enviar mensaje <i class="fa-solid fa-inbox"></i></button>
           </form>
         </div>
-         <div class="contenedor__imagen">
-          <img src="img/comunicacion.png" alt="Logo de comunicación">
-          </div>
-      </div>
+        <div class="contenedor__imagen">
+          <img src="img/comunicacion.png" alt="Logo de comunicación" />
+        </div>
+      </section>
     </main>
+
     <footer>
       <p>
         Página web estática <br />
